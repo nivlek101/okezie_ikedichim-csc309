@@ -2,7 +2,7 @@
 <?php
     $server = 'localhost'; // 127.0.0.1
     $username = 'root';
-    $password = 'rootroot';
+    $password = '';
     $db = 'csc309';
 
     // Open a new connection
@@ -14,10 +14,10 @@
     }
 
     // Query
-    // $sql = "SELECT * FROM users WHERE id = 1";
-    // $sql = "SELECT * FROM users WHERE lastname = 'Igwe'";
-    // $sql = "SELECT * FROM users WHERE email like '%@gmail.com'";
-    // $sql = "SELECT * FROM users WHERE id > 0 ORDER BY id";
+     $sql = "SELECT * FROM users WHERE id = 1";
+     $sql = "SELECT * FROM users WHERE lastname = 'Igwe'";
+     $sql = "SELECT * FROM users WHERE email like '%@gmail.com'";
+     $sql = "SELECT * FROM users WHERE id > 0 ORDER BY id";
     $sql = "SELECT * FROM users ORDER BY id DESC";
     
     $result = $con->query($sql);

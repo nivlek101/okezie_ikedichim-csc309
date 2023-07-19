@@ -21,6 +21,17 @@
             <label for="email">Email:</label>
             <input type="email" name="email">
         </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <select name="gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+        </div>
+        <div>
+            <label for="dob">Date of birth</label>
+            <input type="date" name="date_of_birth">
+        </div>
 
         <button type="submit">Submit</button>
     </form>

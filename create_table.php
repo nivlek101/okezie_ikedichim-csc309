@@ -2,7 +2,7 @@
 <?php
     $server = 'localhost'; // 127.0.0.1
     $username = 'root';
-    $password = 'rootroot';
+    $password = '';
     $db = 'csc309';
 
     // Open a new connection
@@ -14,12 +14,14 @@
     }
 
     // Create a Table
-    $sql = 'CREATE TABLE users (
+    $sql = "CREATE TABLE users (
         id INT AUTO_INCREMENT PRIMARY KEY,
         firstname VARCHAR(30) NOT NULL,
         lastname VARCHAR(30) NOT NULL,
-        email VARCHAR(50) NOT NULL UNIQUE
-    )';
+        email VARCHAR(50) NOT NULL UNIQUE,
+        gender CHAR(1) NOT NULL,
+        date_of_birth DATE NOT NULL
+    )";
 
     $result = $con->query($sql);
 
